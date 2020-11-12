@@ -18,25 +18,83 @@
 
     <div class="container-fluid h-100">
         <div class="row min-vh-100">
-            <!-- Container for user to search their city of choice -->
             <div class="col-sm bg-light" id="city-search-container" style="max-width:350px">
                 <label class="pt-4" for="city-search">Search for a City:</label>
                 <input class="form-control" type="text" id="city-input">
                 <div class="input-group-append">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <button id="searchButton" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="search-history-container">
+                        <div class="card" style="width: 18rem;">
+                            <ul class="list-group list-group-flush" id="search-history">
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-start pt-3" style="width: 60%" id="clear-button-container">
+                            <button class="btn btn-danger" id="clear-button">
+                                Clear History
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6" id="search-history-container">
-
+            <div class="col-8 px-4" id="weather-container">
+                <div class="row pt-3" id="current-weatherInfo">
+                    <div class="col-md-12 border-white">
+                        <div class="d-flex align-items-center pt-4" id="city-name-container">
+                            <h2 class="font-weight-bold" id="city-name"></h2>
+                            <div class="forecast-image-container">
+                                <img alt="forecast-image" id="forecast-image" />
+                            </div>
+                        </div>
+                        <div class="pb-3" id="current-weather-container">
+                            <div id="temperature"></div>
+                            <div id="humidity"></div>
+                            <div id="windspeed"></div>
+                            <div id="uv-index"></div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-12" id="forecast-container">
+                                <h3 class="five-day">5-Day Forecast</h3>
+                                <div class="card-deck text-center" style="color:navy">
+                                    <!-- Day 1 -->
+                                    <div class="card">
+                                        <div class="card-body forecast-card text-center" id="day-1">
+                                        </div>
+                                    </div>
+                                    <!-- Day 2 -->
+                                    <div class="card">
+                                        <div class="card-body forecast-card text-center" id="day-2">
+                                        </div>
+                                    </div>
+                                    <!-- Day 3 -->
+                                    <div class="card">
+                                        <div class="card-body forecast-card text-center" id="day-3">
+                                        </div>
+                                    </div>
+                                    <!-- Day 4 -->
+                                    <div class="card">
+                                        <div class="card-body forecast-card text-center" id="day-4">
+                                        </div>
+                                    </div>
+                                    <!-- Day 5 -->
+                                    <div class="card">
+                                        <div class="card-body forecast-card text-center" id="day-5">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="http://code.jquery.com/jquery-3.5.1.js" 
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
