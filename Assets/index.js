@@ -39,17 +39,20 @@ function init(city) {
         dataType: 'JSON',
         success: function (uviResult) {
             var uviResults = uviResult.value
-            $("#uv-index").html('<b>UV Index: </b>' + uviResults);
-        }
+            $("#uv-index").html('<b>UV Index: </b>' + '<span class="badge" id="uvi-badge">' + uviResults + '</span>');
+            
+            if (uviResults < 3) {
+                $('#uvi-badge').addClass('badge badge-success');
+            } else if (uviResults < 6) {
+                $('#uvi-badge').addClass('badge badge-warning');
+            } else if (uviResults < 11) {
+                $('#uvi-badge').addClass('badge badge-danger');
+            }
         
+        }
     });
-
-    // if (uvi)
     
         }
         
     });
-    
-    // console.log("inside init function")
-    // console.log(city)
 }
