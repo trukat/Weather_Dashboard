@@ -22,3 +22,7 @@ input[type=text] {
       background-color: navy;
       color: white;
   }
+
+  #five-day {
+    display: none;
+  }

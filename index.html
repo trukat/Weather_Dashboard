@@ -44,44 +44,64 @@
                         <div class="d-flex align-items-center pt-4" id="city-name-container">
                             <h2 class="font-weight-bold" id="city-name"></h2>
                             <div class="forecast-image-container">
-                                <img alt="forecast-image" id="forecast-image" />
+                                <img id="forecast-image" />
                             </div>
                         </div>
                         <div class="pb-3" id="current-weather-container">
                             <div id="temperature"></div>
                             <div id="humidity"></div>
                             <div id="windspeed"></div>
-                            <div id="uv-index"><span class="badge badge-primary"></span></div>
+                            <div id="uv-index"></div>
                         </div>
                         <hr>
-                        <div class="row">
-                            <div class="col-lg-12" id="forecast-container">
-                                <h3 class="five-day">5-Day Forecast</h3>
-                                <div class="card-deck text-center" style="color:navy">
+                        <div class="row" id="forecast-container">
+                            <div class="col-lg-12">
+                                <h3 id = "five-day" class="hidden">5-Day Forecast</h3>
+                                <!-- <div class="card-deck text-center" style="color:navy"> -->
                                     <!-- Day 1 -->
-                                    <div class="card">
+                                    <!-- <div class="card">
                                         <div class="card-body forecast-card text-center" id="day-1">
+                                            <h6 class="card-date"></h6>
+                                            <img class="weather-icon">
+                                            <p class="weather-temp"></p>
+                                            <p class="weather-humidity"></p>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- Day 2 -->
-                                    <div class="card">
+                                    <!-- <div class="card">
                                         <div class="card-body forecast-card text-center" id="day-2">
-                                        </div>
-                                    </div>
+                                            <h6 class="card-date"></h6>
+                                            <img class="weather-icon">
+                                            <p class="weather-temp"></p>
+                                            <p class="weather-humidity"></p>
+                                        </div> -->
+                                    <!-- </div> -->
                                     <!-- Day 3 -->
-                                    <div class="card">
+                                    <!-- <div class="card">
                                         <div class="card-body forecast-card text-center" id="day-3">
+                                            <h6 class="card-date"></h6>
+                                            <img class="weather-icon">
+                                            <p class="weather-temp"></p>
+                                            <p class="weather-humidity"></p>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- Day 4 -->
-                                    <div class="card">
+                                    <!-- <div class="card">
                                         <div class="card-body forecast-card text-center" id="day-4">
+                                            <h6 class="card-date"></h6>
+                                            <img class="weather-icon">
+                                            <p class="weather-temp"></p>
+                                            <p class="weather-humidity"></p>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- Day 5 -->
-                                    <div class="card">
+                                    <!-- <div class="card">
                                         <div class="card-body forecast-card text-center" id="day-5">
-                                        </div>
+                                            <h6 class="card-date"></h6>
+                                            <img class="weather-icon">
+                                            <p class="weather-temp"></p>
+                                            <p class="weather-humidity"></p>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -93,8 +113,7 @@
     </div>
 
 
-    <script src="http://code.jquery.com/jquery-3.5.1.js" 
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -102,7 +121,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./Assets/index.js"></script>
 </body>
 
