@@ -17,12 +17,7 @@ input[type=text] {
     border: none;
     cursor: pointer;
   }
-
-  .forecast-card{
-      background-color: navy;
-      color: white;
-  }
-
+  
   #five-day {
     display: none;
   }
