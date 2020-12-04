@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('#searchButton').on('click', function(e) {
         e.preventDefault();
         citySearch = $('#city-input').val().trim();
-        $('.list-group').append(`<li class="list-group-item"><button class="searchedCity">${citySearch}</button></li>`);
+        $('.list-group').append(`<li class="list-group-item"><button class="searchedCity"; style='color:white; background-color: navy';>${citySearch}</button></li>`);
 
         localStorage.setItem('cityName', JSON.stringify(citySearch));
         let lastCity = localStorage.getItem('cityName');
@@ -27,6 +27,7 @@ $(document).ready(function () {
         localStorage.setItem('cityName', JSON.stringify(citySearch));
     })
 });
+
 
 function init(citySearch) {
     $.ajax({
